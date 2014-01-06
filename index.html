@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Erlang für Manager</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Erlang für Manager">
+		<meta name="author" content="Falco Hirschenberger">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -36,318 +36,296 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+				<section>          
+					<h1>Erlang für Manager</h1>
+					<h3>Features, Hype, Buzzwords und Bla-Bla</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>08. Dezember 2013 <br><a href="mailto:falco.hirschenberger@itwm.fraunhofer.de">Falco Hirschenberger</a></small>
 					</p>
+					<img src="images/erlang_logo.png"><br>
+					<img src="images/code-09.gif">
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<h2>Agenda</h2>
+          <ul>
+            <li>Was ist Erlang?</li>
+            <li>Erlang Philosophie</li>
+            <li>Kein Licht ohne Schatten</li>
+            <li>Erlang in der BV</li>
+            <li><q>Das will ich auch lernen!</q></li>
+          </ul>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
+          <h2>Was ist Erlang?</h2>
+          <h3>(in Buzzwords)</h3>
+         
+          <blockquote>
+            &ldquo;Erlang is a declarative, dynamically-typed, functional, concurrent, distributed and fault-tolerant programming language with
+            garbage collection and code hot-swapping built into its soft-realtime runtime system.&rdquo;
+          </blockquote>
+          
+          <br>
+          <p class="fragment roll-in">
+            <img src="images/sturgeonface.jpg"><br>
+            <strong>Ok, alles klar? Fertig.</strong>
+          </p>
 				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <h2>Was ist Erlang?</h2>
+          <h3>(woher)</h3>
+          <ul>
+            <li>Entwickelt 1986 von <q>Joe Armstrong</q> bei Ericsson</li>
+            <li>Seit 1998 Open Source (Mozilla Public License)</li>
+            <li>Der Name kommt vom dänischen Mathematiker <q>Agner Krarup Erlang</q> oder bedeutet einfach <strong>Er</strong>icsson <strong>lang</strong>uage</li>
+            <li>Entwickelt für den Einsatz in großen TK-Anlagen für den Dauerbetrieb (max. Ausfallzeit &lt; 4min/Jahr)</li>
+          </ul>
+          
+          <table width="100%">
+            <tr>
+              <td><img height="200px" src="images/krarup.jpg"></td>
+              <td><img height="200px" src="images/joe_armstrong.jpg"></td> 
+              <td><img src="images/ericsson_logo.png"></td>
+              <td><img height="200px" src="images/erlang_logo.png"></td>
+            </tr>
+            <tr>
+              <td><small>Agner Krarup Erlang</small></td>
+              <td><small>Joe Armstrong</small></td>              
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </section>
 
+				
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h2>Was ist Erlang?</h2>
+					<h3>(wofür)</h3>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>Hochgradig parallele Anwendungen (concurrency) in Multicore und Cloudumgebungen</li>
+						<li>Echtzeitanwendungen</li>
+						<li>Hochverfügbarkeitsanforderungen</li>
+						<li>Dauerbetrieb</li>
 					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
+					<br>
+					<br>
+					<p class="fragment roll-in">
+            <strong>Also wie geschaffen für unsere Inspektionssysteme</strong>
 					</p>
 				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+        <section>
+          <h2>Was ist Erlang?</h2>
+          <h3>(wofür <strong>NICHT</strong>)</h3>
+          <ul>
+            <li>Numbercrunching</li>
+            <li>Bildverarbeitung</li>
+            <li>Grafische Oberflächen</li>
+            <li>Desktopanwendungen</li>
+          </ul>
+          <br>
+          <br>
+          <p class="fragment roll-in">
+            <strong>Also nichts für unsere Algorithmiker</strong>
+          </p>
+        </section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
+        <section>
+          <section>
+            <h2>Erlang Philosophie</h2>
+            <blockquote>
+              The world is concurrent: things in the world don't share data, things communicate with messages, things fail.<br>-- Joe Armstrong
+            </blockquote>
+            <br>
+            <ul class="fragment roll-in">
+              <li>Programmstruktur durch <strong>Prozesse</strong> statt Klassen und Objekte</li>
+              <li>Kommunikation durch <strong>Nachrichtenaustausch</strong></li>
+              <li>Synchronisation durch Verzicht auf Datenteilung und globale Daten</li>
+              <li>⇒ <strong>Actor Model</strong></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Actor Model</h2>
+            <img height="300px" src="images/actor_model.png">
+            <img class="fragment roll-in" height="300px" src="images/an.gif">
+          </section>
+        </section>
+        
+        <section>
+          <section>
+          <h2>Erlang Philosophie</h2>          
+          <blockquote>
+            Let it crash!
+          </blockquote>
+          <p>
+            <img height="250px" src="images/disaster-girl.jpg">
+          </p>
+            <ul class="fragment roll-in">
+              <li>Wiederherstellung statt defensiver Programmierung</li>
+              <li><strong>Supervisor</strong> als <strong>Exception auf Speed</strong></li>
+              <li>Supervisor bilden Bäume von sich überwachenden Prozessen</li>
+              <li>Supervisor haben Regeln wie und wie oft neu gestartet wird bis sie selbst fehlschlagen</li>
+            </ul>
+            <br>
+          </section>
+          <section>
+            <h3>Supervision Trees</h3>
+            <img height="200px" src="images/sup-tree.png">
+            <img height="200px" src="images/supervisor.png">
+            <br>
+            <img height="450px" src="images/erlang_kernel_sup.png">
+          </section>
+        </section>
+        
+        <section>
+          <h2>Erlang Philosophie</h2>          
+          <blockquote>
+            KISS - Keep It Simple Stupid.
+          </blockquote>
+        
+          <ul>
+            <li>Mächtige Standardbibliothek mit pragmatischer, einfacher API.
+            <pre><code class="erlang" data-trim>                              
+% read a file
+{ok, Data} = file:read_file("/home/masc/ofiProtokoll.rst").
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+% sum up the size of all PNG files in a directory recursively.
+filelib:fold_files("/home/masc/images", "*.png", true, 
+                   fun(File, Acc) -> 
+                        filelib:file_size(File) + Acc 
+                   end, 0).
 
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
+% call function every second
+timer:apply_interval(1000, io, format, ["Hello World"]).
+            </code></pre>
+            </li>
+          
+            <li>Netzwerktransparenz 
+              <pre><code class="erlang" data-trim>                              
+% send a message to another process in the same VM
+graph_runner ! {run_graph, [Img1, Img2]},
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+% send a message to a process on another computer
+{masc@worker1, graph_runner} ! {run_graph, [Img1, Img2]},
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
+receive
+    {result, ResultImg} -> ResultImg
+end.
+              </code></pre>
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Kein Licht ohne Schatten</h2>
+          <h3>Syntax</h3>
+          <pre><code class="erlang" data-trim>                              
+-module(evaluate).
+-export([do_evaluate/4]).
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
-
+do_evaluate(Img, FromPid, No, Width) -> 
+     T1 = now(),
+     Graph = load_graph(graph_file),
+     case graph_runner:run_graph(Graph, [Img, Width, 1]) of
+           {results, Res} ->
+                % notify the collector of a new result
+                FromPid ! {new_result, Res, No},
+                lager:info("Graph time: ~p", 
+                           [timer:now_diff(now(), T1)/1000]);
+           {error, R} ->
+                lager:error("Evaluation error: ~p", [R]),
+                % notify the collector of an evaluation error
+                FromPid ! {error, R, No}
+     end.
+          </code></pre>
+          <p class="fragment roll-in">
+            <img height="200px" src="images/o-m-g-baby.gif">
+          </p>
+        </section>
+        <section>
+          <h2>Kein Licht ohne Schatten</h2>
+          <h3>Semantik</h3>
+          <ul>
+            <li>
+            Variablen sind nicht veränderbar
+            <pre><code class="erlang" data-trim>     
+Eshell V5.10.3  (abort with ^G)
+1> Txt = "Hallo" ++ " Welt".
+"Hallo Welt"
+2> Txt = Txt ++ "!".
+** exception error: no match of right hand side value "Hallo Welt!"
+            </code></pre> 
+          </li>
+          <li>Es gibt keine for-Schleifen nur rekursive Funktionsaufrufe und funktionale Sprachkonstrukte (<code>map, fold, foreach</code>)
+          <pre><code class="erlang" data-trim>     
+Eshell V5.10.3  (abort with ^G)
+3> lists:foldl(fun(N, Acc) -> N + Acc end, 0, lists:seq(1,100)).
+5050    
+          </code></pre>            
+          </li>          
+        </section>
+        
+        <section>
+          <h2>Erlang in der BV</h2>
+          <h3>Erstes System <q>Stüken</q></h3>
+          <ul>
+            <li>Klassisches verteiltes Inspektionssystem (3 Worker, 1 Master Rechner)</li>
+            <li>Zunächst Entwicklung von Infrastruktur Modulen (Kamera- und IO-Karten Ansteuerung, Graphrunner, Bilddatenbank)</li>
+            <li>Endliche Automaten-basierte Prozesssteuerung (direkt von Erlang unterstützt)</li>
+            <li>Webbasierte Benutzeroberfläche</li>
+          </ul>
+          <p class="fragment roll-in">
+            <img height="200px" src="images/code-12.gif">
+          </p>
+          <h2 class="fragment roll-in">
+            Fazit: Läuft!
+          </h2>
+        </section>
+        
+        <section>
+          <h2>Erlang in der BV</h2>
+          <h3>Bislang größtes System <q>Xella</q></h3>
+          <ul>
+            <li>Klassisches verteiltes Inspektionssystem (1 Worker, 1 Master Rechner)</li>
+            <li>Wiederverwendung und Erweiterung bestehender Module</li>
+            <li>Neue Module (Profibus OMG!)</li>
+            <li>Riesige Bilddaten (16.000 x 32.000px)</li>
+            <li>Aufwendige Benutzeroberfläche</li>
+          </ul>
+          <p class="fragment roll-in">
+            <img height="200px" src="images/code-13.gif">
+          </p>
+          <h2 class="fragment roll-in">
+            Fazit: Läuft (fast)!
+          </h2>
+        </section>
+          
+        <section>
+          <h2><q>Das will ich auch lernen!</q></h2>
+          <ul>
+            <li> Bücher:
+            <table>
+              <tr>
+                <td><img height="250px" src="images/joe_buch.jpg"></td>
+                <td><img height="250px" src="images/oreilly.jpg"></td>
+                <td><img height="250px" src="images/lyse_buch.jpg"></td>
+                <td><img height="250px" src="images/otp.jpg"></td>
+            </table>
+            </li>
+            <li>Kostenlos online: <strong>Learn you some Erlang for Great Good!</strong> <a href="http://learnyousomeerlang.com/">http://learnyousomeerlang.com</a>
+            <li>Erlang Homepage: <a href="http://www.erlang.org/">http://www.erlang.org</a>
+          </ul>
+        </section>
+        
+        <section>
+          <h2><q>Pah! Das will ich <strong>nicht</strong> lernen!</q></h2>
+          <p class="fragment roll-in">
+            <img height="350px" src="images/code-06.gif">
+          </p>
+        </section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -371,7 +349,7 @@ function linkify( selector ) {
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/highlight/highlight.pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
